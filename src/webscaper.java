@@ -24,7 +24,8 @@ public class webscaper {
         int count = 0;
         int i = contents.indexOf(word);
         for (; i < contents.length() - word.length(); ){
-            i = contents.indexOf(word,i++);
+            i++;
+            i = contents.indexOf(word,i);
             count++;
         }
         return count;
